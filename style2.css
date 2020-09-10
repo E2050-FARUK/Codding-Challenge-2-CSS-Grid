@@ -1,0 +1,56 @@
+.container {
+    display: grid;
+    font-family: sans-serif;
+    color: white;
+    width: 1000px;
+    height: 200vh;
+    padding: 20px;
+    margin: 0 auto;
+    grid-gap: 20px;
+    grid-template-areas:
+    'header header header header header header header '
+    'sbox1 sbox1 sbox2 sbox2 sbox3 sbox3 sidebar'
+    'sbox1 sbox1 sbox2 sbox2 sbox3 sbox3 sidebar'
+    'mcontent mcontent mcontent mcontent mcontent mcontent sidebar'
+    'mcontent mcontent mcontent mcontent mcontent mcontent sidebar'
+    'mcontent mcontent mcontent mcontent mcontent mcontent sidebar'
+    'footer footer footer footer footer footer footer';
+}
+
+.box {
+    background-color: royalblue;
+    font-size: 20px;
+    padding: 20px;
+}
+
+.header {
+    grid-area: header;
+}
+
+.sbox1 {
+    grid-area: sbox1 ;
+    
+}
+
+.sbox2 {
+    grid-area: sbox2 ;
+    
+}
+
+.sbox3 {
+    grid-area: sbox3 ;
+    
+}
+
+.mcontent {
+    grid-area: mcontent;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    
+}
+
+.footer {
+    grid-area: footer ;
+}

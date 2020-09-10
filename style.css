@@ -1,0 +1,42 @@
+.container {
+    display: grid;
+    font-family: sans-serif;
+    color: white;
+    width: 1000px;
+    height: 100vh;
+    padding: 20px;
+    margin: 0 auto;
+    grid-gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr 0.8fr;
+    grid-template-rows: 1fr 2fr 2fr 1fr;
+}
+
+.box {
+    background-color: royalblue;
+    font-size: 20px;
+    padding: 20px;
+    
+
+}
+
+.header {
+    grid-column: 1/5;
+}
+
+.sbox1 {
+    grid-column-start: 1 ;
+    
+}
+
+.mcontent {
+    grid-column: 1/4;
+}
+
+.sidebar {
+    grid-column: 4/5;
+    grid-row: 2/4;
+}
+
+.footer {
+    grid-column: 1/5 ;
+}
